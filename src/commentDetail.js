@@ -14,9 +14,9 @@ class CommentDetail extends React.Component {
         <div className="content">
           <a href="/" className="author"></a>
           <div className="metadata">
-            <span className="date"></span>
+            <span className="date">{this.props.timeAgo}</span>
           </div>
-          <div className="text"></div>
+          <div className="text">{this.props.commentText}</div>
         </div>
       </div>
     )} ;
